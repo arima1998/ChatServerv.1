@@ -1,0 +1,54 @@
+/* src/app/components/ChatBox.module.css */
+.chatBox {
+    background-color: white; /* Box background color */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: popIn 0.5s ease forwards; /* Animation for popping in */
+    transform: scale(0); /* Start from scale 0 */
+}
+
+.header {
+    font-size: 24px;
+    margin: 0;
+}
+
+.icon {
+    font-size: 48px; /* Adjust icon size */
+    display: block;
+    margin-top: 10px;
+}
+
+.input {
+    width: 80%; /* Width of the input fields */
+    padding: 10px;
+    margin: 10px 0; /* Margin for spacing */
+    border: 1px solid #ccc; /* Border styling */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.button {
+    padding: 10px 20px; /* Padding for the button */
+    background-color: #4caf50; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+.button:hover {
+    background-color: #45a049; /* Darker shade on hover */
+}
+
+@keyframes popIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
